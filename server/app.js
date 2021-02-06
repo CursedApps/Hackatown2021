@@ -6,7 +6,8 @@ var app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
- 
+
+app.get("/", (req, res) => res.send("hello from the nestorant app"));
 // CLIENT ROUTES
 app.get("/client/restaurants/", (req, res) => userRoutes.getAllRestaurants(req, res));
 app.get("/client/restaurants/:restaurantID", (req, res) => userRoutes.getRestaurantInfo(req, res));
@@ -21,6 +22,8 @@ app.post("/owner/:restaurantID/setup/", (req, res) => ownerRoutes.postRestaurant
 app.post("/owner/:restaurantID/recipe/", (req, res) => ownerRoutes.postNewRecipe(req, res));
 app.post("/owner/:restaurantID/walkin/", (req, res) => ownerRoutes.postNewWalkInClient(req, res));
 
-app.listen(process.env.PORT || 4000, () =>
-  console.log(`Example app listening on port ${process.env.PORT || 4000}!`),
+
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () =>
+  console.log(`Example app listening on port ${PORT}!`),
 );

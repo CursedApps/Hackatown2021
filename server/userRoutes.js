@@ -3,10 +3,11 @@ const connection = require("./database");
 
 module.exports = {
   getAllRestaurants: function(req, res) {
+    console.log("HELLO")
     connection.query(
       "SELECT * FROM `restaurants`",
       function(error, results, _) {
-        if (error) throw error;
+        if (error) console.log(error);
         res.json(results);
       }
     );
