@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./staff.component.less']
 })
 export class StaffComponent implements OnInit {
+  public staff: Array<string> = []
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public addStaff(): void {
+    this.staff.push("member");
   }
 
 }

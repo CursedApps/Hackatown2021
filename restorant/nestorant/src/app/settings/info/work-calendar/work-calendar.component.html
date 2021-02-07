@@ -1,0 +1,36 @@
+<div class="calendar">
+  <span
+    *ngFor="let dayName of dayOfTheWeekName; let i = index"
+    style="position:fixed;z-index: 3;top: 23.8vh;left:{{
+      i * 7.2 + 51
+    }}vw;color: #d4d4d4; font-size:2rem;"
+    >{{ dayName }}</span
+  >
+  <input
+    *ngFor="let dayId of dayOfTheWeekName; let i = index"
+    type="time"
+    name="start-{{ dayId }}"
+    id="start-time-{{ dayId }}"
+    style="position:fixed;z-index: 3;top: 31vh;left:{{
+      i * 7.1 + 49.25
+    }}vw;color: #d4d4d4; font-size:1.5rem;"
+  />
+
+  <span
+    *ngFor="let dayName of dayOfTheWeekName; let i = index"
+    style="position:fixed;z-index: 3;top: 35vh;left:{{
+      i * 7.15 + 51.5
+    }}vw;color: #472b3f; font-size:2rem;"
+    >To</span
+  >
+
+  <input
+    *ngFor="let dayId of dayOfTheWeekName; let i = index"
+    type="time"
+    name="end-{{ dayId }}"
+    id="end-time-{{ dayId }}"
+    style="position:fixed;z-index: 3;top: 40vh;left:{{
+      i * 7.1 + 49.25
+    }}vw;color: #d4d4d4; font-size:1.5rem;"
+  />
+</div>

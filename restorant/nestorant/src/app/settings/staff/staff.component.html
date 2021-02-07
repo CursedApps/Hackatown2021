@@ -1,25 +1,10 @@
-<div class="container">
+<div class="container-fluid mt-5">
   <div class="row">
-    <div class="col-3">
-      FIRST
+    <div *ngFor="let person of staff" class="col-3">
+      <app-single-staff [person]="person"></app-single-staff>
     </div>
-    <div class="col-3">
-      SECOND
-    </div>
-    <div class="col-3">
-      THIRD
-    </div>
-    <div class="col-3">
-      FORTH
-    </div>
-    <div class="col-3">
-      FIFTH
-    </div>
-    <div class="col-3">
-      SIXTH
-    </div>
-    <div class="col-3">
-      SEVENT
+    <div class="col-3" >
+      <button class="btn" (click)="addStaff()" style="width: 20rem;height: 20rem;text-align: center;vertical-align: middle;background-color: #472b3f; color: #d4d4d4;" >+</button>
     </div>
   </div>
 </div>

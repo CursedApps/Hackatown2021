@@ -14,9 +14,15 @@ import { ReservationsComponent } from './live/reservations/reservations.componen
 import { PredictionsComponent } from './live/predictions/predictions.component';
 import { MonitorComponent } from './live/monitor/monitor.component';
 import { LiveSettingsComponent } from './live/live-settings/live-settings.component';
-import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { ChooseAccountComponent } from './choose-account/choose-account.component';
+import { WorkCalendarComponent } from './settings/info/work-calendar/work-calendar.component';
+import { HolidaysComponent } from './settings/info/holidays/holidays.component';
+import { SingleStaffComponent } from './settings/staff/single-staff/single-staff.component';
+import { CategoryComponent } from './settings/menu/category/category.component';
+import { RecipeDetailsComponent } from './settings/menu/recipe-details/recipe-details.component';
+import { FormsModule } from '@angular/forms';
+import { SettingsService } from './settings.service';
 
 @NgModule({
   declarations: [
@@ -32,15 +38,20 @@ import { ChooseAccountComponent } from './choose-account/choose-account.componen
     PredictionsComponent,
     MonitorComponent,
     LiveSettingsComponent,
-    RegisterComponent,
     LoginComponent,
-    ChooseAccountComponent
+    ChooseAccountComponent,
+    WorkCalendarComponent,
+    HolidaysComponent,
+    SingleStaffComponent,
+    CategoryComponent,
+    RecipeDetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [SettingsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

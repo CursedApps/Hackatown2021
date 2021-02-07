@@ -1,6 +1,14 @@
-<div class="container">
-  <div class="row">  
-    <div class="col-md-8">
+<div class="container-fluid mt-5 info-front">
+  <img
+        src="/assets/Info-Front.png"
+      />
+  <input name="name" type = "text" style="position: fixed;background-color: transparent; border-style: hidden;top: 27.5vh; left: 22vw;width: 15vw;height: 3vh;">
+  <input name="phone" type="number" style="position: fixed;background-color: transparent; border-style: hidden;top: 35.5vh; left: 27vw;width: 15vw;height: 3vh;">
+  <input name="addresse" type="text" style="position: fixed;background-color: transparent; border-style: hidden;top: 43.8vh; left: 27vw;width: 15vw;height: 3vh;">
+  <input name="email" type="text" style="position: fixed;background-color: transparent; border-style: hidden;top: 52.4vh; left: 27vw;width: 15vw;height: 3vh;">
+  <input name="insta" type="text" style="position: fixed;background-color: transparent; border-style: hidden;top: 60.8vh; left: 27vw;width: 12vw;height: 3vh;">
+  <!-- <div class="row">  
+    <div class="col-md-6">
       <div class="row">
         <div class="col-md-4">
           <img id="previewImg" src="https://icon-library.net/images/upload-photo-icon/upload-photo-icon-21.jpg" style="width: 10rem; height: 10rem;" />
@@ -9,15 +17,15 @@
         <div class="col-md-8">
           <div class="nowrap d-flex justify-content-between">
             <span class="col-2">Name</span>
-            <input type="text" class="col-10">
+            <input type="text" class="col-10" [(ngModel)]="settings.name">
           </div>
           <div class="nowrap d-flex justify-content-between">
-            <span class="col-2">Adress</span>
-            <input type="text" class="col-10">
+            <span class="col-2">Address</span>
+            <input type="text" class="col-10" [(ngModel)]="settings.address">
           </div>
           <div class="nowrap d-flex justify-content-between">
             <span class="col-2">Tel</span>
-            <input type="tel" class="col-10">
+            <input type="tel" class="col-10" [(ngModel)]="settings.phone">
           </div>
         </div>
       </div>
@@ -31,13 +39,19 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-6">
       <div class="row">
-        calendar
+        
       </div>
       <div class="row">
-        Jours Fermés
       </div>
     </div>
+  </div> -->
+  <div class="work-calendar" style="z-index: 10;">
+    <app-work-calendar></app-work-calendar>
   </div>
+  <div class="holidays" style="z-index: 10;">
+    <app-holidays></app-holidays>
+  </div>
+
 </div>

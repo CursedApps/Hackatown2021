@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SettingsService } from 'src/app/settings.service';
 
 @Component({
   selector: 'app-info',
@@ -6,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./info.component.less']
 })
 export class InfoComponent implements OnInit {
-
-  constructor() { }
+ 
+  constructor(public settings: SettingsService) { }
 
   ngOnInit(): void {
   }

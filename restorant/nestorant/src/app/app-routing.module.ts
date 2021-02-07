@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
-import { LiveSettingsComponent } from './live/live-settings/live-settings.component';
 import { LiveComponent } from './live/live.component';
 import { MonitorComponent } from './live/monitor/monitor.component';
 import { PredictionsComponent } from './live/predictions/predictions.component';
