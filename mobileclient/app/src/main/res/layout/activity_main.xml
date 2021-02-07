@@ -4,28 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/loginscreen">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="128dp"
-        android:layout_marginEnd="64dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="125dp"
         android:layout_marginBottom="128dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <ImageView
-            android:id="@+id/logo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="50px"
-            tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toTopOf="parent">
 
         <EditText
             android:id="@+id/username"
@@ -33,29 +26,42 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Username"
-            android:inputType="textPersonName" />
+            android:textColor="@color/white"
+            android:textColorHint="@color/lightgrey"
+            android:inputType="textPersonName"
+            android:background="@null"
+            android:layout_marginBottom="40dp"/>
 
         <EditText
             android:id="@+id/editTextTextPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="50px"
+            android:layout_marginBottom="35dp"
             android:ems="10"
             android:hint="Password"
+            android:textColorHint="@color/lightgrey"
+            android:textColor="@color/white"
+            android:background="@null"
             android:inputType="textPassword" />
 
-        <Button
+        <TextView
             android:id="@+id/loginBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="100px"
-            android:text="Log In" />
+            android:text="Login"
+            android:layout_marginHorizontal="16dp"
+            android:paddingVertical="12dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"
+            android:background="?android:attr/selectableItemBackground"/>
 
         <TextView
             android:id="@+id/registerBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Register"
+            android:textColor="@color/red"
             android:textAlignment="center" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/search_under"
+    tools:context=".PaymentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="20dp"
+            android:textSize="50dp"
+            android:text="ORDER SUMMARY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2 x"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Chicken Soup"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="20.00$"
+                android:textAlignment="textEnd"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="1 x" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="Tuna Sandwich" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"
+                android:textSize="20dp"
+                android:text="12.99$" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="1 x" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="Pierogis" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"
+                android:textSize="20dp"
+                android:text="11.50$" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="30dp"
+
+            android:text="44.49$" />
+
+        <TextView
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="left"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+
+            android:text="Reservation Times" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="136dp"
+            android:layout_marginBottom="20dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundcorner"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+
+                    android:text="18h" />
+
+                <TextView
+                    android:id="@+id/reservationBtn"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:background="@drawable/roundcorner"
+                    android:textSize="25dp"
+
+                    android:text="18h30" />
+
+                <TextView
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundcorner"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+
+                    android:text="19h" />
+
+                <TextView
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundcorner"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+
+                    android:text="20h" />
+
+                <TextView
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundcorner"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+
+                    android:text="20h15" />
+
+                <TextView
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:background="@drawable/roundcorner"
+                    android:textSize="25dp"
+
+                    android:text="20h30" />
+
+
+                <TextView
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundcorner"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+
+                    android:text="21h00" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/red"
+            android:text="Pay and Confirm" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

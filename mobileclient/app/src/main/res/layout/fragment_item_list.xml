@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+        android:scrollbars="none"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/faves"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/faves"
+                android:background="?android:attr/selectableItemBackground"
+                />
+
+            <ImageButton
+                android:id="@+id/foru"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginRight="20dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/foryou" />
+
+            <ImageButton
+                android:id="@+id/nearu"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginRight="20dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/nearyou" />
+
+            <ImageButton
+                android:id="@+id/pop"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginRight="20dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/pop" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/list"
+    android:name="com.example.nestor.RestaurantFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    app:layoutManager="LinearLayoutManager"
+    tools:context=".RestaurantFragment"
+    tools:listitem="@layout/fragment_item" >
+
+
+</androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
